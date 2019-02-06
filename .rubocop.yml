@@ -1,0 +1,27 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'tmp/**/*'
+    - 'node_modules/**/*'
+
+Documentation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+    - 'config/environments/**/*.rb'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+
+Rails:
+  Enabled: true
