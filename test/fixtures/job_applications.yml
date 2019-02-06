@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job: one
+  candidate: one
+  submission_date: MyString
+
+two:
+  job: two
+  candidate: two
+  submission_date: MyString
