@@ -1,24 +1,11 @@
-# README
+## Usage
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+From the root of the repository, run:
 
-Things you may want to cover:
+- `bundle install`
+- `rails db:create db:migrate`
+- `rails import:applicants 'data/filename.csv'`
+- `rails server`
+- go to `http://0.0.0.0:3000`
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
