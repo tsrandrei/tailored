@@ -1,4 +1,4 @@
-#Rails CSV Importers Example
+# Rails CSV Importers Example
 
 Create your own Importers for your Rails application
 This app creates 4 models :
