@@ -11,6 +11,11 @@ Installing through the [Usage Instructions](#Usage) the application creates a DB
 Through models you can decide how are linked between them, so the Importers can do proper insert to DB, 
 using Validators and Relationship.
 
+The importers are located in `lib/importers/...`.
+The rake files are located in `lib/tasks/import/...`.
+Take them as example and create your owns. It's free! :massage:
+Imports have rake commandas as : `rake import:applicants`.
+
 ## Usage
 
 From the root of the repository, run:
