@@ -21,7 +21,7 @@ module Importers
       end
     end
 
-      private
+    private
 
     def find_or_create_candidate(line)
       Candidate.where(email: line['E-mail']).first || create_candidate(line)
@@ -37,27 +37,27 @@ module Importers
         note: nil,
         created_at: line['Created at']
       )
-      end
     end
 
-  def candidate_with_phone_as_email(line)
-    Candidate.create!(
-      full_name: line['Name'],
-      email: nil,
-      phone: line['E-mail'],
-      note: nil,
-      created_at: line['Created at']
-    )
-  end
+    def candidate_with_phone_as_email(line)
+      Candidate.create!(
+        full_name: line['Name'],
+        email: nil,
+        phone: line['E-mail'],
+        note: nil,
+        created_at: line['Created at']
+      )
+    end
 
-  def find_or_create_job(line)
-    Job.where(candidate_id: line['E-mail']).first || create_job(line)
-  end
+    def find_or_create_job(line)
+      Job.where(candidate_id: line['E-mail']).first || create_job(line)
+    end
 
-  def create_job(line)
-    Job.create!(
-      title: line['Job'],
-      candidate_id: Candidate.where(email: line['E-mail']).first.id
-    )
+    def create_job(line)
+      Job.create!(
+        title: line['Job'],
+        candidate_id: Candidate.where(email: line['E-mail']).first.id
+      )
+    end
   end
-  end
+end
