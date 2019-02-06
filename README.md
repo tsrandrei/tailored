@@ -32,4 +32,4 @@ It use a Sqlite3 DB for easy set up.
 
 ### Nice to have || TODO :
  - Create a Button in the view to import data
- - Tests 
+ - Tests
