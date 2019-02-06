@@ -1,0 +1,19 @@
+<h1>Candidates Table</h1>
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Note</th>
+    <th>Created at</th>
+  </tr>
+  <% @candidates.each do |candidate| %>
+    <tr>
+      <td><%= candidate.full_name %></td>
+      <td><%= candidate.email %></td>
+      <td><%= candidate.phone %></td>
+      <td><%= candidate.note ? candidate.note.truncate(80) : ' --'%></td>
+      <td><%= candidate.created_at %></td>
+    </tr>
+  <% end %>
+</table>
