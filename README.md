@@ -25,7 +25,8 @@ From the root of the repository, run:
 - `rails import:applicants 'data/filename.csv'`
 - `rails import:notes 'data/filename.csv'`
 - `rails server`
-- go to `http://0.0.0.0:3000`
+- go to `http://0.0.0.0:3000` for the Candidates Table
+- go to `http://0.0.0.0:3000/imports/jobsapplication` for the Jobs Application Table
 
 
 It use a Sqlite3 DB for easy set up.
