@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_02_06_091236) do
   create_table "job_applications", force: :cascade do |t|
     t.integer "job_id"
     t.integer "candidate_id"
-    t.string "submission_date"
+    t.datetime "submission_date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["candidate_id"], name: "index_job_applications_on_candidate_id"
