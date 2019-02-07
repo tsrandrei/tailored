@@ -1,0 +1,21 @@
+<h1>Candidates Table</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Note</th>
+    <th>Submitted at</th>
+    <th>As</th>
+  </tr>
+  <% @job_applications.each do |job_application| %>
+    <tr>
+      <td><%= job_application.candidate.full_name %></td>
+      <td><%= job_application.candidate.email %></td>
+      <td><%= job_application.candidate.phone %></td>
+      <td><%= job_application.candidate.note %></td>
+      <td><%= job_application.submission_date.to_formatted_s(:short) %></td>
+      <td><%= job_application.job.title %></td>
+    </tr>
+  <% end %>
+</table>

@@ -2,5 +2,6 @@
 
 Rails.application.routes.draw do
   get 'imports/index'
+  get 'imports/jobsapplication'
   root 'imports#index'
 end
